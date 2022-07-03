@@ -133,3 +133,31 @@ public class Main
 }
 
 
+         /*Given a sorted array A and a target value B, return the index if the target is found. If not, print the index where
+	 it would be if it were inserted in order.
+	 First line given is an integer N, denoting the size of array A. Second line contains N integers - the elements of array A. 
+	 Third line given is integer B.
+	 example 4 [3 7 12 44]  11   output 2(index number)                    */
+	 
+	 import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n =sc.nextInt();
+		int a[] = new int[n];
+		for(int i=0;i<n;i++){
+		    a[i]=sc.nextInt();
+		    
+		}
+		int k = sc.nextInt();
+		for(int i=0;i<n;i++){
+		    if(a[i]>=k){
+		        System.out.println(i);
+		        break;
+		    }
+		    
+		}
+	}
+}
+	 
