@@ -1,0 +1,45 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    // for loop
+    
+    for(int i=0;i<n;i++){
+       System.out.println(i);
+       }
+       
+     // while loop
+     int i=0;
+     while(i<=n){
+     System.out.println(i);
+     i++;
+     }
+     // do-while loop
+     int i=0;
+     do{
+     System.out.println(i);
+     i++;
+     }while(i<=n)
+     // break statemnet (this is used to come out from loop when the condition is fullfilled) break statement is used with flow and conditional statements
+     for(int i=0;i<n;i++){
+     if(i<=5){
+     System.out.println(i)
+     break;
+     }
+     }
+     
+     // continue statemnet (this is used skip only this iteration and continue with loop)
+     for(int i=0;i<n;i++){
+     if(i==5){
+     System.out.println(i)
+     continue;
+     }
+     }
+	}
+}
