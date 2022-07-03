@@ -1,0 +1,99 @@
+
+// factorial with loop
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+      Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
+      long fact = 1;
+      for(int i=1;i<=n;i++){
+        fact = fact*i;
+      }
+      System.out.println(fact);
+	}
+}
+
+
+    /// ARMSTRONG NUMBER 
+import java.util.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+  {
+    int j;
+      for(j=1;j<=500;j++){
+        int temp=j;
+        int r;
+      int sum=0;
+      while(temp>0){
+        r = temp%10;
+        sum = sum+(r*r*r);
+        temp =temp/10;
+      }
+       if(sum==j){
+         System.out.println(j);
+         
+       } 
+       
+     }
+  }
+       
+       // REVERSE A DIGIT
+       import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+      long n =sc.nextLong();
+      long rem;
+      int i=1;
+      long sum=0;
+      while(n>0){
+        rem = n%10;
+        sum = sum*10+rem;
+        n=n/10;
+        i++;
+      }
+      System.out.println(sum);
+	   
+    }
+  }
+          // POWER OF A NUMBER
+          import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
+      int p =sc.nextInt();
+      int pow =1;
+      while(p!=0){
+        pow =pow*n;
+        --p;
+      }
+      System.out.println(pow);
+     /*for(int i=1;i<=p;i++){
+        pow = pow *n;
+     } 
+      System.out.println(pow);*/
+	}
+}
+
+
+   
+      
