@@ -1,0 +1,135 @@
+ /*                  Largest Number At Least Twice of Others
+                    You are given an integer array nums where the largest integer is unique.
+Determine whether the largest element in the array is at least twice as much as every other number in the array. 
+If it is, print the index of the largest element, or print -1 otherwise.                    */
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n =sc.nextInt();
+		int a[] = new int[n];
+		int max = Integer.MIN_VALUE;
+		int maxindex =0;
+		for(int i=0;i<n;i++){
+		    a[i]=sc.nextInt();
+		    if(a[i]>max){
+		        max =a[i];
+		        maxindex =i;
+		    }
+		    
+		}
+		boolean flag = false;
+		for(int i=0;i<n;i++){
+		        if( i!=maxindex && max < 2*a[i]){
+		            flag = true;
+		        }
+		    }
+		    if(flag){
+		        System.out.println(-1);
+		    }
+		    else{
+		        System.out.println(maxindex);
+		    }
+		
+	}
+}
+
+
+/*     PEAK ELEMENT
+An element is called a peak element if its value is not smaller than the value of its adjacent elements(if they exists). Given an array arr[] of size n, find the index of first peak element. If peak element does not exist print -1.
+
+Input
+line 1: contains an integer n denoting size of array.
+
+line 2: contains n spaced integers denoting elements of array.
+
+Output
+Print a single integer denoting the index of first peak element in array. If no such element exists, print -1.         */
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n =sc.nextInt();
+		int a[] = new int[n];
+		for(int i=0;i<n;i++){
+		    a[i]=sc.nextInt();
+		    
+		}
+    if(n==1){
+    System.out.println(0);
+    return;
+    }
+		if(a[0]>a[1] ){
+		    System.out.println(0);
+		    return;
+		}
+		
+		    for(int i=1;i<n-1;i++){
+		        if(a[i]>a[i+1] &&a[i]>a[i-1]){
+		            System.out.println(i);
+		            return;
+		        }
+		    }
+		
+		 if(a[n-1]>a[n-2]){
+		     System.out.println(n-1);
+		     return;
+		}
+		
+		    System.out.println(-1);
+		
+	}
+}
+   /*  SUM OF ARRAY EXCEPT SELF  */
+         import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n =sc.nextInt();
+		int a[] = new int[n];
+		int sum =0;
+		for(int i=0;i<n;i++){
+		    a[i]=sc.nextInt();
+		    sum += a[i];
+		    
+		}
+		for(int i=0;i<n;i++){
+		    System.out.print(sum-a[i] +" ");
+		}
+		
+		
+	}
+}
+          // largest and second largest number in an array
+
+        import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n =sc.nextInt();
+		int a[] = new int[n];
+		int max =Integer.MIN_VALUE;
+		int secondmax = Integer.MIN_VALUE;
+		for(int i=0;i<n;i++){
+		    a[i]=sc.nextInt();
+		    if(a[i]>max){
+		        secondmax = max;
+		        max = a[i];
+		    }
+		    else if(a[i]>secondmax){
+		        secondmax =a[i];
+		    }
+		}
+		
+		System.out.println(max);
+		System.out.println(secondmax);
+		
+	}
+}
+
+
