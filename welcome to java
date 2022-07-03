@@ -1,0 +1,30 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		System.out.println("hello world");   // to print on a screen
+    System.out.print("************");
+    System.out.println("print in same line ");
+    // to take inputs from user
+    Scanner sc = new Scanner(System.in); // here sc is a variable
+    // data types
+    int n = sc.nextInt();
+    long m =sc.nextLong();
+    char ch = '@';
+    String s1 =sc.next(); //next encounters both space and enter
+    String s2 =sc.nextLine();// nextLine encounters only enter for nextline
+    float a =sc.nextFloat();
+    double b =sc.nextDouble();
+    boolean flag =sc.nextBoolean();
+    short c= sc.nextShort();
+    //how to concatinate the integers and strings
+    int p = 400;
+    int q =200;
+    System.out.println("sum of two numbers is "+(a+b));
+    System.out.println("this is concatination "+a+b);
+	}
+}
