@@ -160,4 +160,44 @@ public class Main
 		}
 	}
 }
+	   /*           Find First and Last Position of Element in Sorted Array
+           Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
+
+         If target is not found in the array, print[-1, -1].            */
 	 
+	 
+	 import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+      int n =sc.nextInt();
+      int k =sc.nextInt();
+      int a[] = new int[n];
+      for(int i=0;i<n;i++){
+        a[i] =sc.nextInt();
+      }
+      int ans1 = -1;
+      for(int i=0;i<n;i++){
+        if(a[i]==k){
+          ans1 =i;
+          break;
+        }
+      }
+      System.out.print(ans1 +" ");
+      int ans2 =-1;
+      
+            for(int i=n-1;i>=0;i--){
+        if(a[i]==k){
+          ans2 = i;
+          break;
+        }
+      }
+      
+      System.out.print(ans2);
+	}
+}
