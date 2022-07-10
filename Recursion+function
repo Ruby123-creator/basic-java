@@ -1,0 +1,75 @@
+
+
+  // FACTORIAL NUMBER
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int a =sc.nextInt();
+	    int ans = fact(a);
+	    System.out.print(ans);
+		
+	}
+  public static int fact(int n)
+	{
+	    if(n==0){
+	        return 1;
+	    }
+	    return n*fact(n-1);
+	   
+	}
+	
+}
+    
+    // FIBONACCI SERIES
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int a =sc.nextInt();
+	    int ans = fib(a);
+	    System.out.print(ans);
+		
+	}
+public static int fact(int n)
+	{
+	    
+	   if(n==1){
+	       return 0;
+	       
+	   }
+	   if(n==2){
+	       return 1;
+	   }
+	   return fib(n-1)+fib(n-2);
+	  
+	    
+	}
+	
+}
+
+// SUM OF DIGITS USING RECURSION
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    int a =sc.nextInt();
+	    int ans = sum(a);
+	    System.out.print(ans);
+		
+	}
+public static int sum(int n)
+	{
+	    
+	   if(n==0){
+	       return 0;
+	   }
+	   return n%10 + sum(n/10);
+	    
+	}
+	
+}
+
